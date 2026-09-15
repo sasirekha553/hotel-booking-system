@@ -1,16 +1,56 @@
-# React + Vite
+# StayEasy - Hotel Booking System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+StayEasy is a full-stack hotel booking web application that allows users to browse hotels, view available rooms, register and login securely, book rooms, view their bookings, and cancel bookings.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User registration and login
+- JWT-based authentication
+- Browse available hotels
+- Search hotels by city
+- View hotel details and rooms
+- Book available rooms
+- View bookings
+- Cancel bookings
+- Automatic room availability update
+- RESTful backend APIs
+- PostgreSQL database
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React
+- Vite
+- JavaScript
+- Axios
+- React Router
 
-## Expanding the Oxlint configuration
+### Backend
+- Java
+- Spring Boot
+- Spring Data JPA
+- Spring Security
+- JWT Authentication
+- Maven
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Database
+- PostgreSQL
+
+## Project Structure
+
+```text
+hotel-booking/
+├── frontend source files
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/backend/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── model/
+│   │   │   │   ├── repository/
+│   │   │   │   └── security/
+│   │   │   └── resources/
+│   │   └── test/
+│   ├── pom.xml
+│   └── mvnw
+└── README.md
